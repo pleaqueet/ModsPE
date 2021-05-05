@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="34dp"
+        android:layout_height="32dp"
+        android:layout_margin="35dp"
+        android:background="@drawable/ic_back_button"
+        android:elevation="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/title_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView_Mod"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_bg" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/favButtonDetailed"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="315dp"
+        android:background="@drawable/ic_favorite_false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/title_detail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <TextView
+        android:id="@+id/title_detail"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="56dp"
+        android:elevation="6dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto"
+        android:lines="2"
+        android:text="Functional pack for ore mining"
+        android:textAlignment="textStart"
+        android:textColor="#FE6F61"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/download_text"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="625dp"
+        android:elevation="100dp"
+        android:fontFamily="@font/share"
+        android:text="Download"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:layout_marginTop="600dp"
+        android:id="@+id/download"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_download" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="10dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762">
+
+        <TextView
+            android:id="@+id/desc_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Mine Ruins is a mod for Android game that adds a new structure to the game. This structure is a small entrance to the mine. Inside the mine there may be caves, there may be other spaces, for example, a large space for fighting mobs, abandoned paths. Externally, the entrance to the mine looks like a small abandoned basement. You can find a new structure in all forests. There are several treasures in the mine, but the path to them is limited by traps."
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </ScrollView>
+
+</RelativeLayout>
